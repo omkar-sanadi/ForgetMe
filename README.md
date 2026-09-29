@@ -1,6 +1,6 @@
 # ForgetMe
 
-[![build](https://github.com/WIZ4RD-OM24/ForgetMe/actions/workflows/ci.yml/badge.svg)](https://github.com/WIZ4RD-OM24/ForgetMe/actions/workflows/ci.yml)
+[![build](https://github.com/omkar-sanadi/ForgetMe/actions/workflows/ci.yml/badge.svg)](https://github.com/omkar-sanadi/ForgetMe/actions/workflows/ci.yml)
 
 > One request in, every system cleaned, proof out.
 
@@ -331,7 +331,7 @@ Handlers must be idempotent: jobs are delivered at least once. If your app uses 
 ## Getting started
 
 ```bash
-git clone https://github.com/WIZ4RD-OM24/ForgetMe.git && cd ForgetMe
+git clone https://github.com/omkar-sanadi/ForgetMe.git && cd ForgetMe
 ```
 
 ### Option A: the full demo, one command

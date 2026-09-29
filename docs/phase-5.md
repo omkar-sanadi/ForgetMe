@@ -136,7 +136,7 @@ You need a Linux server with Docker. Two good options: Oracle Cloud's **Always F
 1. **Point a name at the server.** No need to buy a domain: if your server's address is `203.0.113.10`, then `203-0-113-10.sslip.io` already points there.
 2. **On the server:**
    ```bash
-   git clone https://github.com/WIZ4RD-OM24/ForgetMe.git && cd ForgetMe
+   git clone https://github.com/omkar-sanadi/ForgetMe.git && cd ForgetMe
    cp deploy/.env.example deploy/.env
    openssl rand -base64 32   # run twice: one for the encryption key, one for the fingerprint secret
    nano deploy/.env          # fill in DOMAIN, the two secrets, a database password and an admin password

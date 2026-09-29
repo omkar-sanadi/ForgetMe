@@ -13,7 +13,7 @@
 - **Step 5:** web pages for both sides (the person asking, and the admin), limits that stop misuse, separate production settings, API documentation, automatic testing on GitHub, and everything needed to put it on a server.
 
 **All 30 automatic checks pass.**
-**The code is on GitHub** at https://github.com/WIZ4RD-OM24/ForgetMe, and it's public, so you can put the link on your resume.
+**The code is on GitHub** at https://github.com/omkar-sanadi/ForgetMe, and it's public, so you can put the link on your resume.
 **Next:** put it online. You'll need a server (free on Oracle Cloud, or about $5 a month elsewhere). The steps are in the [phase 5 guide](docs/phase-5.md#putting-it-on-a-server-your-step), and I can walk you through them.
 
 ---

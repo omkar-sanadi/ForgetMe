@@ -116,7 +116,7 @@ Goal: a verified request reaches every connector, in stages, and survives failur
 - 2026-09-22: Docker Desktop set up (Java 21 now the default `JAVA_HOME`). All 8 tests pass, 0 skipped, including the full flow on Testcontainers.
 - 2026-09-22: M1 confirmed by hand (file → Mailpit code → verify). Started per-phase docs in `docs/`.
 - 2026-09-22: M2 built. Dispatcher with lease-based `SKIP LOCKED` claiming, signed requests and reports, exponential backoff, stages, `NEEDS_ATTENTION` + admin retry. Fake connectors use the JDK's `HttpServer` instead of WireMock. Task statuses simplified to `PENDING / SENT / DONE / FAILED`, with `RETAINED` as a result rather than a status. 14 tests pass.
-- 2026-09-22: Pushed to GitHub as a private repo: https://github.com/WIZ4RD-OM24/ForgetMe
+- 2026-09-22: Pushed to GitHub as a private repo: https://github.com/omkar-sanadi/ForgetMe
 - 2026-09-22: M3 built. HMAC hash-chained audit log with an append-only trigger and a verify endpoint; certificates anchored by the latest audit hash; email erased on every final state (not just `COMPLETED`); deadline alerts emailed to the admin. `code-secret` renamed to `hash-secret`, now used for all keyed fingerprints. 19 tests pass.
 - 2026-09-22: M3 pushed to GitHub.
 - 2026-09-22: M4 built. Connector starter, four-role demo app, Dockerfile, Compose `demo` profile with scripted registration, optional connector secrets. 25 tests pass (21 orchestrator + 4 starter). Full demo run: 48 s from confirmation to certificate.
@@ -124,5 +124,5 @@ Goal: a verified request reaches every connector, in stages, and survives failur
 - 2026-09-22: M5 built. Admin page, rate limits, allowed email domains, `prod` profile, springdoc, GitHub Actions, deployment files (Caddy + compose), k6 load test. 29 tests pass. Measured: 200 file-and-verify journeys in 3.0 s (p95 582 ms), then all 200 fanned out across 4 connectors in 30 s (~400/min, 800 jobs, 2,200 audit events). Live deployment still pending a server.
 - 2026-09-22: M5 pushed. First GitHub Actions run green: all 29 tests, including the Testcontainers ones, pass on GitHub's machines.
 - 2026-09-23: Added the requester's web pages (ask, confirm, watch, receipt), so the demo needs no commands at all. `admin.css` became `style.css`; `FORGETME_PORT` makes the demo's host port configurable; `forgetme.demo-inbox-url` points visitors at the fake inbox. 30 tests pass; all four screens clicked through in a browser.
-- 2026-09-23: Repository made public: https://github.com/WIZ4RD-OM24/ForgetMe
+- 2026-09-23: Repository made public: https://github.com/omkar-sanadi/ForgetMe
 - 2026-09-23: Security pass. Fixed four real holes: admin logins could be guessed without limit, `X-Forwarded-For` could be forged past the per-IP limit (Caddy now overwrites it), containers ran as root, and `deploy/.env` wasn't git-ignored. Added Dependabot. All 30 tests pass.
